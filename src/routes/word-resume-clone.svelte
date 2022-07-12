@@ -41,7 +41,7 @@
 		</p>
 		<p>
 			Please feel free to view my resume or even hire me. Details can be found 👉
-			<a href="https://resume.jonellwood.dev">here</a>
+			<a href="https://resume.jonellwood.dev" target="_blank">here</a>
 		</p>
 	</article>
 </div>
@@ -53,9 +53,6 @@
 		margin-right: auto;
 	}
 
-	p {
-		text-align: justify;
-	}
 	img {
 		float: right;
 		margin: 5px;

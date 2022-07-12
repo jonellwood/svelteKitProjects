@@ -6,7 +6,8 @@
 	import resume from '$lib/assets/resume.png';
 	import salary from '$lib/assets/salary.png';
 
-	let width = '60%';
+	// let width = '60%';
+	let height = '75px';
 </script>
 
 <div class="container">
@@ -14,7 +15,7 @@
 		<div class="card">
 			<a href="/dev-site">
 				<h2>Pokemon Style Dev Site</h2>
-				<img class="card-image" src={pokemonGame} alt="pokemon style game screenshot" {width} />
+				<img class="card-image" src={pokemonGame} alt="pokemon style game screenshot" {height} />
 				<p class="exerpt">A different take on a dev site using a Pokemon style game in canvas.</p>
 				<p class="date-text">July 1, 2022</p>
 				<p class="stack-text">HTML, Javascript, Canvas</p>
@@ -23,7 +24,7 @@
 		<div class="card">
 			<a href="/word-resume-clone">
 				<h2>Resume Word Clone attempt</h2>
-				<img class="card-image" src={resume} alt="Word clone screenshot" {width} />
+				<img class="card-image" src={resume} alt="Word clone screenshot" {height} />
 				<p class="exerpt">My attempt to clone the look of Microsoft Word for my resume</p>
 				<p class="date-text">June 22, 2022</p>
 				<p class="stack-text">HTML. CSS, Javascript</p>
@@ -32,7 +33,7 @@
 		<div class="card">
 			<a href="/pokedex-app">
 				<h2>PokeDex Site</h2>
-				<img class="card-image" src={pokeidex} alt="Pokdex App screenshot" {width} />
+				<img class="card-image" src={pokeidex} alt="Pokdex App screenshot" {height} />
 				<p class="exerpt">Everyone has to make this app at least once right? Here's mine</p>
 				<p class="date-text">June 13, 2021</p>
 				<p class="stack-text">React, Redux</p>
@@ -41,7 +42,7 @@
 		<div class="card">
 			<a href="/salary-calc-app">
 				<h2>Salary Calcualtor App</h2>
-				<img class="card-image" src={salary} alt="Salary Calculator App screenshot" {width} />
+				<img class="card-image" src={salary} alt="Salary Calculator App screenshot" {height} />
 				<p class="exerpt">Using Javascript instead of printed sheets of paper?</p>
 				<p class="date-text">March 21, 2022</p>
 				<p class="stack-text">HTML, CSS, Javascript</p>
@@ -54,7 +55,7 @@
 					class="card-image"
 					src={license}
 					alt="Business Fee License Calculator App screenshot"
-					{width}
+					{height}
 				/>
 				<p class="exerpt">
 					A tool I built that is in production using Raw HTML & Javascript blocks in Wordpress
@@ -63,7 +64,7 @@
 				<p class="stack-text">HTML, Javascript, Wordpress</p>
 			</a>
 		</div>
-		<div class="card">
+		<!-- <div class="card">
 			<a href="/gatsby-blog">
 				<h2>Simple Blog Site</h2>
 				<img class="card-image" src={parksBlog} alt="Parks Blog screenshot" {width} />
@@ -71,7 +72,7 @@
 				<p class="date-text">March 15, 2021</p>
 				<p class="stack-text">Gatsby, Sanity</p>
 			</a>
-		</div>
+		</div> -->
 	</div>
 </div>
 
@@ -85,6 +86,7 @@
 		/* display: grid; */
 		/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
 		display: flex;
+		justify-content: center;
 	}
 	.card {
 		width: 250px;
@@ -99,6 +101,19 @@
 		text-align: center;
 		border-radius: 20px;
 		/* margin-bottom: 35px; */
+		text-shadow: 5px 10px 10px #a0a0a0;
+		-webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 21px 10px rgba(0, 0, 0, 0);
+		box-shadow: 0px 10px 13px -7px #000000, 0px 0px 21px 10px rgba(0, 0, 0, 0);
+	}
+	.card:hover,
+	.card:active {
+		/* box-shadow: 5px 10px 10px black; */
+		/* text-shadow: 5px 10px 10px black; */
+		/* box-shadow: 0px 10px 13px -7px #000000, 0px 0px 13px 10px rgba(0, 0, 0, 0); */
+		-webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+			0px 0px 13px 10px rgba(0, 0, 0, 0);
+		box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #a0a0a0,
+			0px 0px 13px 10px rgba(0, 0, 0, 0);
 	}
 	.card h2 {
 		font-size: medium;

@@ -7,7 +7,7 @@
 		<h1>Pokemon Style Game based Dev Site</h1>
 		<p>
 			I generally use my personal
-			<a href="https://jonellwood.dev"><b> website </b></a>
+			<a href="https://jonellwood.dev" target="_blank"><b> website </b></a>
 			as a bit of a playground to try out new things I am learning.
 		</p>
 
@@ -45,7 +45,7 @@
 			that it will be taken for what it is intended to be - something a little different to
 			highlight some creativity and positivity; but also help me get a job! 😁 Please take a minute
 			to swing by
-			<a href="https://jonellwood.dev">jonellwood.dev</a>
+			<a href="https://jonellwood.dev" target="_blank"><b>jonellwood.dev</b></a>
 			and check it out!
 		</p>
 	</article>
@@ -62,8 +62,5 @@
 		margin-top: 5px;
 		margin-right: 15px;
 		margin-bottom: 10px;
-	}
-	p {
-		text-align: justify;
 	}
 </style>
