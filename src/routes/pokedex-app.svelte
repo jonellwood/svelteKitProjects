@@ -1,9 +1,30 @@
 <script>
 	import lighthouse from '../lib/assets/pokiedexLighthouse.png';
+	let bgOpacity = 0.5;
+	$: color = bgOpacity < 0.6 ? '#000' : '#fff';
+	let fontSize = 16;
+	$: size = fontSize;
 </script>
 
-<div class="container-for-everything">
+<div class="slider-holder">
+	<label>
+		<input type="range" min="0" max="1" step="0.1" bind:value={bgOpacity} />
+		Adjust background opacity
+	</label>
+	<label>
+		<input type="range" min="12" max="20" step="2" bind:value={size} />
+		Adjust font size:{size} px
+	</label>
+</div>
+
+<div
+	class="container-for-everything"
+	style="color: {color}; 
+			--opacity: {bgOpacity};
+			--font-size:{size + 'px'};"
+>
 	<article>
+		<h1>Obligitory Pokedex App</h1>
 		<p>
 			Why does everyone seem to make a Pokedex app when learning how to interact with API's? Because
 			it is so much fun! My attempt at it can be found
@@ -22,6 +43,10 @@
 </div>
 
 <style>
+	.container-for-everything {
+		background: rgba(37, 70, 125, var(--opacity));
+		font-size: var(--font-size);
+	}
 	img {
 		width: 50%;
 	}

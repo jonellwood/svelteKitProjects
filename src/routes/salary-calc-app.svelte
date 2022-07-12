@@ -1,9 +1,30 @@
 <script>
 	import Gist from '$lib/components/gist.svelte';
+	let bgOpacity = 0.5;
+	$: color = bgOpacity < 0.6 ? '#000' : '#fff';
+	let fontSize = 16;
+	$: size = fontSize;
 </script>
 
-<div class="container-for-everything">
+<div class="slider-holder">
+	<label>
+		<input type="range" min="0" max="1" step="0.1" bind:value={bgOpacity} />
+		Adjust background opacity
+	</label>
+	<label>
+		<input type="range" min="12" max="20" step="2" bind:value={size} />
+		Adjust font size:{size} px
+	</label>
+</div>
+
+<div
+	class="container-for-everything"
+	style="color: {color}; 
+			--opacity: {bgOpacity};
+			--font-size:{size + 'px'};"
+>
 	<article>
+		<h1>Salary Comparison App</h1>
 		<p>
 			One day while installing a printer at a new workstation I watched a conversation between two
 			managers discussing a coming years budget and salary increases for employees. The pay scale
@@ -35,6 +56,10 @@
 </div>
 
 <style>
+	.container-for-everything {
+		background: rgba(37, 70, 125, var(--opacity));
+		font-size: var(--font-size);
+	}
 	a:hover {
 		font-size: larger;
 	}

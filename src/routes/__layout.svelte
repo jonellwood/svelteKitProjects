@@ -4,11 +4,23 @@
 	import PostCarousel from '../lib/components/postCarousel.svelte';
 	import BottomHr from '../lib/components/bottomHr.svelte';
 	import TopHr from '../lib/components/topHr.svelte';
+	// import { fly } from 'svelte/transition';
+	let visible = false;
+	// function toggle() {
+	// 	visible.false = !visible.false;
+	// }
 </script>
 
 <h1>Jon Ellwood Projects Page</h1>
+{#if !visible}
+	<button class:active={visible} on:click={() => (visible = !visible)}>Hide List</button>
+{:else}
+	<button class:active={visible} on:click={() => (visible = !visible)}>Show List</button>
+{/if}
 <TopHr />
-<PostCarousel />
+{#if !visible}
+	<PostCarousel />
+{/if}
 <BottomHr />
 
 <slot />
