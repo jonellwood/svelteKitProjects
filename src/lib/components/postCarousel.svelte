@@ -151,4 +151,23 @@
 		text-align: end;
 		margin-right: 30px;
 	}
+	@media (max-width: 1275px) {
+		.card-holder {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+	@media (max-width: 900px) {
+		.card-holder {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	@media (max-width: 537px) {
+		.card-holder {
+			grid-template-columns: 1fr;
+		}
+		.card img {
+			display: none;
+		}
+	}
 </style>

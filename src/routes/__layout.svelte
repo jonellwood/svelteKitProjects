@@ -18,4 +18,9 @@
 	h1 {
 		text-align: center;
 	}
+	@media (max-width: 500px) {
+		h1 {
+			font-size: large;
+		}
+	}
 </style>
