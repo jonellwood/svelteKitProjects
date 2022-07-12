@@ -11,13 +11,18 @@
 			I decided on trying to make a web page that looks like a Word Document.
 		</p>
 
-		<p>
-			My goals were simple: - It should look as close to a Word Document as possible. - The HTML
-			should be semantically correct. - It should meet all requirements for a11y. - It should also
-			have all the information a potential employer might need. i.e. it needs to be a current and
-			functional resume.
-		</p>
 		<img src={WordResumeClone} alt="word Clone" width="40%" />
+		<p>My goals were simple:</p>
+		<ul>
+			<li>It should look as close to a Word Document as possible.</li>
+			<li>The HTML should be semantically correct.</li>
+			<li>It should meet all requirements for a11y.</li>
+			<li>
+				It should also have all the information a potential employer might need. i.e. it needs to be
+				a current and functional resume.
+			</li>
+		</ul>
+
 		<p>
 			I started by researching what hex values Office 365 Word used which was fairly easy to find.
 			(Firefox dev tools color grab tool made this very easy) Then I started laying out the HTML and
@@ -47,14 +52,15 @@
 </div>
 
 <style>
-	.container-for-everything {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
+	a:hover {
+		font-size: larger;
 	}
 
 	img {
 		float: right;
 		margin: 5px;
+	}
+	li {
+		padding: 2px;
 	}
 </style>

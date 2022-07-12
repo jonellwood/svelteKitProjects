@@ -22,12 +22,10 @@
 </div>
 
 <style>
-	.container-for-everything {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	img {
 		width: 50%;
+	}
+	a:hover {
+		font-size: larger;
 	}
 </style>

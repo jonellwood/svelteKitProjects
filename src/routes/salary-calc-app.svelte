@@ -35,9 +35,7 @@
 </div>
 
 <style>
-	.container-for-everything {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
+	a:hover {
+		font-size: larger;
 	}
 </style>

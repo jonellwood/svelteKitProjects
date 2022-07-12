@@ -54,15 +54,13 @@
 </div>
 
 <style>
-	.container-for-everything {
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
 	img {
 		float: left;
-		margin-top: 5px;
+		margin-top: 40px;
 		margin-right: 15px;
 		margin-bottom: 10px;
+	}
+	a:hover {
+		font-size: larger;
 	}
 </style>
