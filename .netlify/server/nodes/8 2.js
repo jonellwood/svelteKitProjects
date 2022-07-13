@@ -27,8 +27,8 @@ __export(stdin_exports, {
   stylesheets: () => stylesheets
 });
 module.exports = __toCommonJS(stdin_exports);
-var module2 = __toESM(require("../entries/pages/word-resume-clone.svelte.js"));
-const index = 9;
-const file = "immutable/pages/word-resume-clone.svelte-cfbc438a.js";
-const imports = ["immutable/pages/word-resume-clone.svelte-cfbc438a.js", "immutable/chunks/index-64a710e1.js", "immutable/chunks/countStore-2be4ca35.js", "immutable/chunks/index-f9cae57c.js", "immutable/chunks/resume-3fe092a9.js"];
-const stylesheets = ["immutable/assets/pages/word-resume-clone.svelte-df2dacff.css"];
+var module2 = __toESM(require("../entries/pages/salary-calc-app.svelte.js"));
+const index = 8;
+const file = "immutable/pages/salary-calc-app.svelte-feca4e9e.js";
+const imports = ["immutable/pages/salary-calc-app.svelte-feca4e9e.js", "immutable/chunks/index-64a710e1.js", "immutable/chunks/countStore-2be4ca35.js", "immutable/chunks/index-f9cae57c.js"];
+const stylesheets = ["immutable/assets/pages/salary-calc-app.svelte-27a55d90.css"];

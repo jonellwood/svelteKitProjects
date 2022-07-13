@@ -27,8 +27,8 @@ __export(stdin_exports, {
   stylesheets: () => stylesheets
 });
 module.exports = __toCommonJS(stdin_exports);
-var module2 = __toESM(require("../entries/pages/pokedex-app.svelte.js"));
-const index = 6;
-const file = "immutable/pages/pokedex-app.svelte-94a39ee5.js";
-const imports = ["immutable/pages/pokedex-app.svelte-94a39ee5.js", "immutable/chunks/index-64a710e1.js", "immutable/chunks/countStore-2be4ca35.js", "immutable/chunks/index-f9cae57c.js"];
-const stylesheets = ["immutable/assets/pages/pokedex-app.svelte-b4198f40.css"];
+var module2 = __toESM(require("../entries/pages/__error.svelte.js"));
+const index = 1;
+const file = "immutable/pages/__error.svelte-4a9a8d9f.js";
+const imports = ["immutable/pages/__error.svelte-4a9a8d9f.js", "immutable/chunks/index-64a710e1.js"];
+const stylesheets = [];

@@ -25,7 +25,7 @@ var import_countStore_39c8aeeb = require("../../immutable/chunks/countStore-39c8
 var licenseCode = "/_app/immutable/assets/licenseCode-fc3c3d35.png";
 var feeCalcApp_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".container-for-everything.svelte-12p57vx{background:rgba(37, 70, 125, var(--opacity));font-size:var(--font-size)}img.svelte-12p57vx{margin-top:5px;margin-right:15px;margin-bottom:10px}a.svelte-12p57vx:hover{font-size:larger}li.svelte-12p57vx{padding:2px}",
+  code: ".container-for-everything.svelte-1oicm55{background:rgba(37, 70, 125, var(--opacity));font-size:var(--font-size)}img.svelte-1oicm55{margin-top:5px;margin-right:15px;margin-bottom:10px}a.svelte-1oicm55:hover{font-size:larger}li.svelte-1oicm55{padding:2px}",
   map: null
 };
 const Fee_calc_app = (0, import_index_4384d251.c)(($$result, $$props, $$bindings, slots) => {
@@ -40,27 +40,26 @@ const Fee_calc_app = (0, import_index_4384d251.c)(($$result, $$props, $$bindings
   });
   $$result.css.add(css);
   color = bgOpacity < 0.6 ? "#000" : "#fff";
-  return `<div class="${"container-for-everything svelte-12p57vx"}" style="${"color: " + (0, import_index_4384d251.e)(color, true) + "; --opacity: " + (0, import_index_4384d251.e)(bgOpacity, true) + "; --font-size:" + (0, import_index_4384d251.e)(countValue + "px", true) + ";"}"><article><h1>Fee Calculator Site</h1>
+  return `<div class="${"container-for-everything svelte-1oicm55"}" style="${"color: " + (0, import_index_4384d251.e)(color, true) + "; --opacity: " + (0, import_index_4384d251.e)(bgOpacity, true) + "; --font-size:" + (0, import_index_4384d251.e)(countValue + "px", true) + ";"}"><article><h1>Fee Calculator Site</h1>
 		<p>I was approached about adding a Business License Fee calculator to an existing Wordpress Site.
 			The request had a few specific requirements.
 		</p>
-		<ul><li class="${"svelte-12p57vx"}">Every business has a classification and each classification has its own rate</li>
-			<li class="${"svelte-12p57vx"}">The fee is calculated based on the annual revenue of the business</li>
-			<ul><li class="${"svelte-12p57vx"}">The first million dollars has a base rate based on the classification</li>
-				<li class="${"svelte-12p57vx"}">The second million dollars has a lower rate than the preceeding million</li>
-				<li class="${"svelte-12p57vx"}">The third million follows the pattern of the second and so on</li></ul>
-			<li class="${"svelte-12p57vx"}">The fee is also based on if the business owner is a resident of the City</li></ul>
+		<ul><li class="${"svelte-1oicm55"}">Every business has a classification and each classification has its own rate</li>
+			<li class="${"svelte-1oicm55"}">The fee is calculated based on the annual revenue of the business</li>
+			<ul><li class="${"svelte-1oicm55"}">The first million dollars has a base rate based on the classification</li>
+				<li class="${"svelte-1oicm55"}">The second million dollars has a lower rate than the preceeding million</li>
+				<li class="${"svelte-1oicm55"}">The third million follows the pattern of the second and so on</li></ul>
+			<li class="${"svelte-1oicm55"}">The fee is also based on if the business owner is a resident of the City</li></ul>
 
 		<p>I originally reached for Python and worked out most of the logic but found it challenging to
 			integrate that into an existing Wordpress site that I had limited access to. By rewriting it
 			in JavaScript it was much easier to impliement just using a RawHTML block and Javascript
 			block.
 		</p>
-		<img${(0, import_index_4384d251.a)("src", licenseCode, 0)} alt="${"code showing calculations"}" width="${"40%"}" class="${"svelte-12p57vx"}">
+		<img${(0, import_index_4384d251.a)("src", licenseCode, 0)} alt="${"code showing calculations"}" width="${"40%"}" class="${"svelte-1oicm55"}">
 
 		<p>The calculation logic was by far the most complex part of the project.</p>
 		<p>Once that was sorted the rest was easy. You can see the project in production
-			<a href="${"https://cityofhanahan.com/business-licenses/business-license-fees/"}" target="${"_blank"}" class="${"svelte-12p57vx"}"><b>here.</b></a></p>
-		</article>
+			<a href="${"https://cityofhanahan.com/business-licenses/business-license-fees/"}" target="${"_blank"}" class="${"svelte-1oicm55"}"><b>here.</b></a></p></article>
 </div>`;
 });

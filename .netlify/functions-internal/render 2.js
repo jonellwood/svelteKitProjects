@@ -5,7 +5,7 @@ exports.handler = init({
 	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		entry: {"file":"immutable/start-ff5c1bb1.js","imports":["immutable/start-ff5c1bb1.js","immutable/chunks/index-64a710e1.js","immutable/chunks/index-f9cae57c.js"],"stylesheets":[]},
+		entry: {"file":"immutable/start-26787c01.js","imports":["immutable/start-26787c01.js","immutable/chunks/index-64a710e1.js","immutable/chunks/index-f9cae57c.js"],"stylesheets":[]},
 		nodes: [
 			() => Promise.resolve().then(() => require('../server/nodes/0.js')),
 			() => Promise.resolve().then(() => require('../server/nodes/1.js')),
@@ -15,7 +15,8 @@ exports.handler = init({
 			() => Promise.resolve().then(() => require('../server/nodes/4.js')),
 			() => Promise.resolve().then(() => require('../server/nodes/6.js')),
 			() => Promise.resolve().then(() => require('../server/nodes/7.js')),
-			() => Promise.resolve().then(() => require('../server/nodes/8.js'))
+			() => Promise.resolve().then(() => require('../server/nodes/8.js')),
+			() => Promise.resolve().then(() => require('../server/nodes/9.js'))
 		],
 		routes: [
 			{
@@ -64,13 +65,24 @@ exports.handler = init({
 			},
 			{
 				type: 'page',
+				id: "p",
+				pattern: /^\/p\/?$/,
+				names: [],
+				types: [],
+				path: "/p",
+				shadow: null,
+				a: [0,6],
+				b: [1]
+			},
+			{
+				type: 'page',
 				id: "pokedex-app",
 				pattern: /^\/pokedex-app\/?$/,
 				names: [],
 				types: [],
 				path: "/pokedex-app",
 				shadow: null,
-				a: [0,6],
+				a: [0,7],
 				b: [1]
 			},
 			{
@@ -81,7 +93,7 @@ exports.handler = init({
 				types: [],
 				path: "/salary-calc-app",
 				shadow: null,
-				a: [0,7],
+				a: [0,8],
 				b: [1]
 			},
 			{
@@ -92,7 +104,7 @@ exports.handler = init({
 				types: [],
 				path: "/word-resume-clone",
 				shadow: null,
-				a: [0,8],
+				a: [0,9],
 				b: [1]
 			}
 		],

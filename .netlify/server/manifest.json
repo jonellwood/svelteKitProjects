@@ -20,7 +20,7 @@
       "_resume-3fe092a9.js"
     ],
     "css": [
-      "immutable/assets/entries/pages/__layout.svelte-e4277c7c.css"
+      "immutable/assets/entries/pages/__layout.svelte-df2d6009.css"
     ],
     "assets": [
       "immutable/assets/salary-b5d7c1da.png",
@@ -61,7 +61,7 @@
       "_countStore-39c8aeeb.js"
     ],
     "css": [
-      "immutable/assets/entries/pages/fee-calc-app.svelte-12c80a31.css"
+      "immutable/assets/entries/pages/fee-calc-app.svelte-b0cda777.css"
     ],
     "assets": [
       "immutable/assets/licenseCode-fc3c3d35.png"
@@ -78,14 +78,6 @@
   "src/routes/index.svelte": {
     "file": "entries/pages/index.svelte.js",
     "src": "src/routes/index.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-4384d251.js"
-    ]
-  },
-  "src/routes/p.svelte": {
-    "file": "entries/pages/p.svelte.js",
-    "src": "src/routes/p.svelte",
     "isEntry": true,
     "imports": [
       "_index-4384d251.js"

@@ -75,7 +75,6 @@ const Word_resume_clone = (0, import_index_4384d251.c)(($$result, $$props, $$bin
 			UPDATE: Did refactor to Svelte. Took about 2 1/2 hours and wow was it worth it!
 		</p>
 		<p>Please feel free to view my resume or even hire me. Details can be found \u{1F449}
-			<a href="${"https://resume.jonellwood.dev"}" target="${"_blank"}" class="${"svelte-af7r64"}">here</a></p>
-		</article>
+			<a href="${"https://resume.jonellwood.dev"}" target="${"_blank"}" class="${"svelte-af7r64"}">here</a></p></article>
 </div>`;
 });
