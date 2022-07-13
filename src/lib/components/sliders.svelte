@@ -1,9 +1,9 @@
-<script>
+<!-- <script>
 	import { bgOpacity } from './stores.js';
 	import { fontSize } from './stores.js';
 
 	$: color = bgOpacity < 0.6 ? '#000' : '#fff';
-	// let fontSize = 16;
+
 	$: size = fontSize;
 </script>
 
@@ -16,4 +16,4 @@
 		<input type="range" min="12" max="20" step="2" bind:value={$size} />
 		Adjust font size:{$size} px
 	</label>
-</div>
+</div> -->

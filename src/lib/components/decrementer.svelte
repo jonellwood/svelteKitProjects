@@ -9,7 +9,6 @@
 
 <style>
 	button {
-		/* font-size: 12px; */
 		margin-left: 2px;
 		margin-right: 2px;
 	}

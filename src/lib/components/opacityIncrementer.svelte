@@ -7,9 +7,3 @@
 </script>
 
 <button on:click={increment}> + </button>
-
-<style>
-	/* button {
-		font-size: 12px;
-	} */
-</style>

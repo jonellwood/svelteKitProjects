@@ -109,9 +109,7 @@
 	}
 
 	.card:hover {
-		/* transform: perspective(1250px) translateZ(90px); */
 		transform: rotate(-3deg);
-		/* z-index: 2; */
 		-webkit-box-shadow: 5px 5px 5px 0px #a0a0a0, inset 4px 4px 15px 0px #a0a0a0,
 			0px 0px 13px 10px rgba(0, 0, 0, 0);
 		box-shadow: 5px 5px 5px 0px #a0a0a0, inset 4px 4px 15px 0px #a0a0a0,

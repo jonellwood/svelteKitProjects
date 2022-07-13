@@ -1,6 +1,7 @@
 <script>
-	import { count } from '../../src/lib/components/countStore.js';
-	import { opacity } from '../../src/lib/components/countStore.js';
+	import { count, opacity } from '../../src/lib/components/countStore.js';
+	import chat from '../lib/assets/pokemonGame.png';
+
 	let countValue;
 	count.subscribe((value) => {
 		countValue = value;
@@ -12,7 +13,6 @@
 	});
 
 	$: color = bgOpacity < 0.6 ? '#000' : '#fff';
-	import chat from '../lib/assets/pokemonGame.png';
 </script>
 
 <div

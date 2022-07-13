@@ -1,6 +1,5 @@
 <script>
-	import { count } from '../../src/lib/components/countStore.js';
-	import { opacity } from '../../src/lib/components/countStore.js';
+	import { count, opacity } from '../../src/lib/components/countStore.js';
 	let countValue;
 	count.subscribe((value) => {
 		countValue = value;

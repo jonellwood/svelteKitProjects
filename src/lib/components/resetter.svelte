@@ -7,9 +7,3 @@
 </script>
 
 <button on:click={reset}> reset </button>
-
-<style>
-	/* button {
-		font-size: 12px;
-	} */
-</style>

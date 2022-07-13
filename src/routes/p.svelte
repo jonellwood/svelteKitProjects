@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { count } from '../../src/lib/components/countStore.js';
 	import { opacity } from '../../src/lib/components/countStore.js';
 	import Incrementer from '../../src/lib/components/opacityIncrementer.svelte.js';
@@ -30,4 +30,4 @@
 		background: rgba(37, 70, 125, var(--opacity));
 		font-size: var(--font-size);
 	}
-</style>
+</style> -->

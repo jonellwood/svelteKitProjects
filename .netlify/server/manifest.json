@@ -1,0 +1,154 @@
+{
+  ".svelte-kit/build/index.js": {
+    "file": "index.js",
+    "src": ".svelte-kit/build/index.js",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/build/hooks.js"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "entries/pages/__layout.svelte.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js",
+      "_countStore-39c8aeeb.js",
+      "_resume-3fe092a9.js"
+    ],
+    "css": [
+      "immutable/assets/entries/pages/__layout.svelte-e4277c7c.css"
+    ],
+    "assets": [
+      "immutable/assets/salary-b5d7c1da.png",
+      "immutable/assets/pokidex-f3370099.png",
+      "immutable/assets/license-dc576810.png",
+      "immutable/assets/pokemonStart-58dd9fbe.png"
+    ]
+  },
+  "src/routes/__error.svelte": {
+    "file": "entries/pages/__error.svelte.js",
+    "src": "src/routes/__error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js"
+    ]
+  },
+  "src/routes/dev-site.svelte": {
+    "file": "entries/pages/dev-site.svelte.js",
+    "src": "src/routes/dev-site.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js",
+      "_countStore-39c8aeeb.js"
+    ],
+    "css": [
+      "immutable/assets/entries/pages/dev-site.svelte-d590c418.css"
+    ],
+    "assets": [
+      "immutable/assets/pokemonGame-96346be7.png"
+    ]
+  },
+  "src/routes/fee-calc-app.svelte": {
+    "file": "entries/pages/fee-calc-app.svelte.js",
+    "src": "src/routes/fee-calc-app.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js",
+      "_countStore-39c8aeeb.js"
+    ],
+    "css": [
+      "immutable/assets/entries/pages/fee-calc-app.svelte-12c80a31.css"
+    ],
+    "assets": [
+      "immutable/assets/licenseCode-fc3c3d35.png"
+    ]
+  },
+  "src/routes/gatsby-blog.svelte": {
+    "file": "entries/pages/gatsby-blog.svelte.js",
+    "src": "src/routes/gatsby-blog.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "entries/pages/index.svelte.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js"
+    ]
+  },
+  "src/routes/p.svelte": {
+    "file": "entries/pages/p.svelte.js",
+    "src": "src/routes/p.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js"
+    ]
+  },
+  "src/routes/pokedex-app.svelte": {
+    "file": "entries/pages/pokedex-app.svelte.js",
+    "src": "src/routes/pokedex-app.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js",
+      "_countStore-39c8aeeb.js"
+    ],
+    "css": [
+      "immutable/assets/entries/pages/pokedex-app.svelte-5539ba95.css"
+    ],
+    "assets": [
+      "immutable/assets/pokiedexLighthouse-7496077e.png"
+    ]
+  },
+  "src/routes/salary-calc-app.svelte": {
+    "file": "entries/pages/salary-calc-app.svelte.js",
+    "src": "src/routes/salary-calc-app.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js",
+      "_countStore-39c8aeeb.js"
+    ],
+    "css": [
+      "immutable/assets/entries/pages/salary-calc-app.svelte-a2ad0305.css"
+    ]
+  },
+  "src/routes/word-resume-clone.svelte": {
+    "file": "entries/pages/word-resume-clone.svelte.js",
+    "src": "src/routes/word-resume-clone.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-4384d251.js",
+      "_countStore-39c8aeeb.js",
+      "_resume-3fe092a9.js"
+    ],
+    "css": [
+      "immutable/assets/entries/pages/word-resume-clone.svelte-1dbd9feb.css"
+    ]
+  },
+  "_index-4384d251.js": {
+    "file": "immutable/chunks/index-4384d251.js"
+  },
+  "_countStore-39c8aeeb.js": {
+    "file": "immutable/chunks/countStore-39c8aeeb.js",
+    "imports": [
+      "_index-4384d251.js"
+    ]
+  },
+  "_resume-3fe092a9.js": {
+    "file": "immutable/chunks/resume-3fe092a9.js",
+    "assets": [
+      "immutable/assets/resume-9ddee115.png"
+    ]
+  },
+  ".svelte-kit/build/hooks.js": {
+    "file": "immutable/chunks/hooks-d259abab.js",
+    "src": ".svelte-kit/build/hooks.js",
+    "isDynamicEntry": true
+  }
+}
