@@ -1,7 +1,6 @@
 <script context="module">
 	import pokemonGame from '$lib/assets/pokemonStart.png';
 	import license from '$lib/assets/license.png';
-	import parksBlog from '$lib/assets/parksBlog.png';
 	import pokeidex from '$lib/assets/pokidex.png';
 	import resume from '$lib/assets/resume.png';
 	import salary from '$lib/assets/salary.png';
@@ -66,15 +65,6 @@
 					<p class="stack-text">HTML, Javascript, Wordpress</p>
 				</a>
 			</div>
-			<!-- <div class="card">
-				<a href="/gatsby-blog">
-					<h2>Simple Blog Site</h2>
-					<img class="card-image" src={parksBlog} alt="Parks Blog screenshot" {width} />
-					<p class="exerpt">Simple blog style site using Gastby and Sanity</p>
-					<p class="date-text">March 15, 2021</p>
-					<p class="stack-text">Gatsby, Sanity</p>
-				</a>
-			</div> -->
 		</div>
 	</div>
 </OnMount>

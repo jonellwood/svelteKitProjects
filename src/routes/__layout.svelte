@@ -1,6 +1,5 @@
 <script>
 	import { count } from '../../src/lib/components/countStore.js';
-	import { opacity } from '../../src/lib/components/countStore.js';
 
 	import Incrementer from '../lib/components/incrementer.svelte';
 	import Decrementer from '../lib/components/decrementer.svelte';
