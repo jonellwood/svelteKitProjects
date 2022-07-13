@@ -5,9 +5,9 @@
 	import Decrementer from '../lib/components/decrementer.svelte';
 	import Resetter from '../lib/components/resetter.svelte';
 
-	import OpacityIncrementer from '../lib/components/opacityIncrementer.svelte';
-	import Opacitydecrementer from '../lib/components/opacityDecrementer.svelte';
-	import OpacityResetter from '../lib/components/OpacityResetter.svelte';
+	// import OpacityIncrementer from '../lib/components/opacityIncrementer.svelte';
+	// import Opacitydecrementer from '../lib/components/opacityDecrementer.svelte';
+	// import OpacityResetter from '../lib/components/OpacityResetter.svelte';
 
 	import Footer from '../lib/components/footer.svelte';
 	import PostCarousel from '../lib/components/postCarousel.svelte';
@@ -36,12 +36,12 @@
 		<Resetter />
 	</p>
 	<p>The font size is {countValue}px</p>
-	<p class="right-text">Adjust Opacity</p>
-	<p class="opacity-button">
+	<!-- <p class="right-text">Adjust Opacity</p> -->
+	<!-- <p class="opacity-button">
 		<OpacityIncrementer />
 		<Opacitydecrementer />
 		<OpacityResetter />
-	</p>
+	</p> -->
 
 	<p class="hide-button">
 		{#if !visible}
@@ -76,8 +76,7 @@
 	}
 
 	.hide-button,
-	.font-button,
-	.opacity-button {
+	.font-button {
 		display: flex;
 		margin-left: 5px;
 		align-items: center;
@@ -89,9 +88,9 @@
 		.font-button {
 			display: none;
 		}
-		.opacity-button {
+		/* .opacity-button {
 			display: none;
-		}
+		} */
 	}
 	@media (max-width: 500px) {
 		h1 {
