@@ -35,7 +35,7 @@
 		<Decrementer />
 		<Resetter />
 	</p>
-	<p>The font size is {countValue}px</p>
+	<p class="vanishing-text">The font size is {countValue}px</p>
 	<p class="right-text">Adjust Opacity</p>
 	<p class="opacity-button">
 		<OpacityIncrementer />
@@ -89,7 +89,9 @@
 		.font-button {
 			display: none;
 		}
-		.opacity-button {
+		.opacity-button,
+		.right-text,
+		.vanishing-text {
 			display: none;
 		}
 	}
