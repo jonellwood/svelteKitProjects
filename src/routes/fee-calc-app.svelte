@@ -54,10 +54,6 @@
 				><b>here.</b></a
 			>
 		</p>
-		<!-- <label>
-			<input type="range" min="0" max="1" step="0.1" bind:value={bgOpacity} />
-			Adjust background opacity
-		</label> -->
 	</article>
 </div>
 
@@ -67,7 +63,6 @@
 		font-size: var(--font-size);
 	}
 	img {
-		/* float: left; */
 		margin-top: 5px;
 		margin-right: 15px;
 		margin-bottom: 10px;

@@ -65,10 +65,6 @@
 			Please feel free to view my resume or even hire me. Details can be found 👉
 			<a href="https://resume.jonellwood.dev" target="_blank">here</a>
 		</p>
-		<!-- <label>
-			<input type="range" min="0" max="1" step="0.1" bind:value={bgOpacity} />
-			Adjust background opacity
-		</label> -->
 	</article>
 </div>
 

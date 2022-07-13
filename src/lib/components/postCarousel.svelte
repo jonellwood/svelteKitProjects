@@ -5,7 +5,6 @@
 	import pokeidex from '$lib/assets/pokidex.png';
 	import resume from '$lib/assets/resume.png';
 	import salary from '$lib/assets/salary.png';
-	import { fly } from 'svelte/transition';
 	import { OnMount } from 'fractils';
 
 	// let width = '60%';
