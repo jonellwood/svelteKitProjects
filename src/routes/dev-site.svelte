@@ -1,4 +1,12 @@
 <script>
+	import { count } from '../../src/lib/components/countStore.js';
+	let countValue;
+
+	count.subscribe((value) => {
+		console.log(value);
+		countValue = value;
+	});
+
 	import chat from '../lib/assets/pokemonGame.png';
 	let bgOpacity = 0.5;
 	$: color = bgOpacity < 0.6 ? '#000' : '#fff';
@@ -11,16 +19,12 @@
 		<input type="range" min="0" max="1" step="0.1" bind:value={bgOpacity} />
 		Adjust background opacity
 	</label>
-	<label>
-		<input type="range" min="12" max="20" step="2" bind:value={size} />
-		Adjust font size:{size} px
-	</label>
 </div>
 <div
 	class="container-for-everything"
 	style="color: {color}; 
 			--opacity: {bgOpacity};
-			--font-size:{size + 'px'};"
+			--font-size:{countValue + 'px'};"
 >
 	<article>
 		<h1>Pokemon Style Game based Dev Site</h1>

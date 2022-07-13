@@ -13,7 +13,7 @@
 </script>
 
 <OnMount>
-	<div class="container" in:fly={{ y: -500, duration: 1000 }}>
+	<div class="container" in:fly={{ x: 500, duration: 750 }}>
 		<div class="card-holder">
 			<div class="card">
 				<a href="/dev-site">
