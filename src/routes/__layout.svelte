@@ -1,9 +1,21 @@
 <script>
 	import { count } from '../../src/lib/components/countStore.js';
 	import { opacity } from '../../src/lib/components/countStore.js';
+
 	import Incrementer from '../lib/components/incrementer.svelte';
 	import Decrementer from '../lib/components/decrementer.svelte';
 	import Resetter from '../lib/components/resetter.svelte';
+
+	import OpacityIncrementer from '../lib/components/opacityIncrementer.svelte';
+	import Opacitydecrementer from '../lib/components/opacityDecrementer.svelte';
+	import OpacityResetter from '../lib/components/OpacityResetter.svelte';
+
+	import Footer from '../lib/components/footer.svelte';
+	import PostCarousel from '../lib/components/postCarousel.svelte';
+	import BottomHr from '../lib/components/bottomHr.svelte';
+	import TopHr from '../lib/components/topHr.svelte';
+	import MiddleHr from '../lib/components/middleHr.svelte';
+	import '../app.css';
 
 	let countValue;
 
@@ -12,21 +24,6 @@
 		countValue = value;
 	});
 
-	let bgOpacity;
-
-	opacity.subscribe((value) => {
-		bgOpacity = value;
-	});
-
-	import '../app.css';
-	import Footer from '../lib/components/footer.svelte';
-	import PostCarousel from '../lib/components/postCarousel.svelte';
-	import BottomHr from '../lib/components/bottomHr.svelte';
-	import TopHr from '../lib/components/topHr.svelte';
-	import MiddleHr from '../lib/components/middleHr.svelte';
-	import OpacityIncrementer from '../lib/components/opacityIncrementer.svelte';
-	import Opacitydecrementer from '../lib/components/opacityDecrementer.svelte';
-	import OpacityResetter from '../lib/components/OpacityResetter.svelte';
 	let visible = false;
 </script>
 
