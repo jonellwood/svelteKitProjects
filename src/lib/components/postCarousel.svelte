@@ -13,7 +13,7 @@
 </script>
 
 <OnMount>
-	<div class="container" in:fly={{ x: 500, duration: 750 }}>
+	<div class="container">
 		<div class="card-holder">
 			<div class="card">
 				<a href="/dev-site">
@@ -97,7 +97,7 @@
 		width: 250px;
 		display: grid;
 		grid-template-rows: 1fr;
-		margin-top: 15px;
+		/* margin-top: 15px; */
 		margin-left: 10px;
 		margin-right: 10px;
 		/* width: 90%; */
@@ -113,7 +113,7 @@
 	}
 
 	.card:hover {
-		transform: perspective(400px) translateZ(90px);
+		transform: perspective(550px) translateZ(90px);
 		z-index: 2;
 		/* transform: scaleY(1.2); */
 		/* transform-origin: bottom-right; */
@@ -164,6 +164,9 @@
 	@media (max-width: 900px) {
 		.card-holder {
 			grid-template-columns: 1fr 1fr;
+		}
+		.card:hover {
+			transform: perspective(700px) translateZ(90px);
 		}
 	}
 	@media (max-width: 537px) {

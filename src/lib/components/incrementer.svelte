@@ -2,7 +2,7 @@
 	import { count } from '../components/countStore.js';
 
 	function increment() {
-		count.update((n) => n + 1);
+		count.update((n) => n + 2);
 	}
 </script>
 

@@ -15,18 +15,21 @@
 	import PostCarousel from '../lib/components/postCarousel.svelte';
 	import BottomHr from '../lib/components/bottomHr.svelte';
 	import TopHr from '../lib/components/topHr.svelte';
+	import MiddleHr from '../lib/components/middleHr.svelte';
 	let visible = false;
 </script>
 
 <h1>Jon Ellwood Projects Page</h1>
+
 <div class="control-buttons">
-	<p class="font-button">
+	<div class="font-button">
 		Adjust font size
 		<Incrementer />
 		<Decrementer />
 		<Resetter />
+
 		The font size is {countValue}px
-	</p>
+	</div>
 
 	<p class="hide-button">
 		{#if !visible}
@@ -37,23 +40,20 @@
 	</p>
 </div>
 
-<TopHr />
 {#if !visible}
+	<TopHr />
 	<PostCarousel />
+	<BottomHr />
 {/if}
-<BottomHr />
-
+{#if visible}
+	<MiddleHr />
+{/if}
 <slot />
 <Footer />
 
 <style>
 	h1 {
 		text-align: center;
-	}
-	@media (max-width: 500px) {
-		h1 {
-			font-size: large;
-		}
 	}
 
 	.control-buttons {
@@ -66,5 +66,15 @@
 	.hide-button {
 		display: flex;
 		justify-content: center;
+	}
+	@media (max-width: 900px) {
+		.font-button {
+			display: none;
+		}
+	}
+	@media (max-width: 500px) {
+		h1 {
+			font-size: large;
+		}
 	}
 </style>

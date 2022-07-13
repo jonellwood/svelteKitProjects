@@ -8,6 +8,6 @@
 		margin-top: 30px;
 		margin-bottom: 30px;
 		color: #185abd;
-		box-shadow: 3px 15px 20px 8px #00008b50;
+		box-shadow: 0px 0px 28px 11px #00008b50;
 	}
 </style>
