@@ -15,6 +15,8 @@
 
 <style>
 	.footer {
+		color: #fff;
+		font-weight: 500;
 		text-align: center;
 	}
 	.footer a {

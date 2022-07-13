@@ -97,15 +97,11 @@
 		width: 250px;
 		display: grid;
 		grid-template-rows: 1fr;
-		/* margin-top: 15px; */
 		margin-left: 10px;
 		margin-right: 10px;
-		/* width: 90%; */
-		/* height: 200px; */
 		border: 3px solid black;
 		text-align: center;
-		border-radius: 20px;
-		/* margin-bottom: 35px; */
+		border-radius: 25px;
 		text-shadow: 5px 10px 10px #a0a0a0;
 		-webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 21px 10px rgba(0, 0, 0, 0);
 		box-shadow: 0px 10px 13px -7px #000000, 0px 0px 21px 10px rgba(0, 0, 0, 0);
@@ -113,11 +109,9 @@
 	}
 
 	.card:hover {
-		transform: perspective(550px) translateZ(90px);
-		z-index: 2;
-		/* transform: scaleY(1.2); */
-		/* transform-origin: bottom-right; */
-
+		/* transform: perspective(1250px) translateZ(90px); */
+		transform: rotate(-3deg);
+		/* z-index: 2; */
 		-webkit-box-shadow: 5px 5px 5px 0px #a0a0a0, inset 4px 4px 15px 0px #a0a0a0,
 			0px 0px 13px 10px rgba(0, 0, 0, 0);
 		box-shadow: 5px 5px 5px 0px #a0a0a0, inset 4px 4px 15px 0px #a0a0a0,

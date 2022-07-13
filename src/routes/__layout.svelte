@@ -1,5 +1,6 @@
 <script>
 	import { count } from '../../src/lib/components/countStore.js';
+	import { opacity } from '../../src/lib/components/countStore.js';
 	import Incrementer from '../lib/components/incrementer.svelte';
 	import Decrementer from '../lib/components/decrementer.svelte';
 	import Resetter from '../lib/components/resetter.svelte';
@@ -10,26 +11,41 @@
 		console.log(value);
 		countValue = value;
 	});
+
+	let bgOpacity;
+
+	opacity.subscribe((value) => {
+		bgOpacity = value;
+	});
+
 	import '../app.css';
 	import Footer from '../lib/components/footer.svelte';
 	import PostCarousel from '../lib/components/postCarousel.svelte';
 	import BottomHr from '../lib/components/bottomHr.svelte';
 	import TopHr from '../lib/components/topHr.svelte';
 	import MiddleHr from '../lib/components/middleHr.svelte';
+	import OpacityIncrementer from '../lib/components/opacityIncrementer.svelte';
+	import Opacitydecrementer from '../lib/components/opacityDecrementer.svelte';
+	import OpacityResetter from '../lib/components/OpacityResetter.svelte';
 	let visible = false;
 </script>
 
 <h1>Jon Ellwood Projects Page</h1>
 
 <div class="control-buttons">
-	<div class="font-button">
-		Adjust font size
+	<p class="right-text">Adjust font size</p>
+	<p class="font-button">
 		<Incrementer />
 		<Decrementer />
 		<Resetter />
-
-		The font size is {countValue}px
-	</div>
+	</p>
+	<p>The font size is {countValue}px</p>
+	<p class="right-text">Adjust Opacity</p>
+	<p class="opacity-button">
+		<OpacityIncrementer />
+		<Opacitydecrementer />
+		<OpacityResetter />
+	</p>
 
 	<p class="hide-button">
 		{#if !visible}
@@ -58,17 +74,26 @@
 
 	.control-buttons {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		margin-left: 3rem;
+		margin-right: 3rem;
 	}
-	.font-button {
-		margin-left: 20px;
-	}
-	.hide-button {
+
+	.hide-button,
+	.font-button,
+	.opacity-button {
 		display: flex;
-		justify-content: center;
+		margin-left: 5px;
+		align-items: center;
+	}
+	.right-text {
+		text-align: right;
 	}
 	@media (max-width: 900px) {
 		.font-button {
+			display: none;
+		}
+		.opacity-button {
 			display: none;
 		}
 	}

@@ -1,25 +1,19 @@
 <script>
 	import { count } from '../../src/lib/components/countStore.js';
+	import { opacity } from '../../src/lib/components/countStore.js';
 	let countValue;
-
 	count.subscribe((value) => {
-		console.log(value);
 		countValue = value;
 	});
 
-	import WordResumeClone from '../lib/assets/resume.png';
-	let bgOpacity = 0.5;
-	$: color = bgOpacity < 0.6 ? '#000' : '#fff';
-	let fontSize = 16;
-	$: size = fontSize;
-</script>
+	let bgOpacity;
+	opacity.subscribe((value) => {
+		bgOpacity = value;
+	});
 
-<div class="slider-holder">
-	<label>
-		<input type="range" min="0" max="1" step="0.1" bind:value={bgOpacity} />
-		Adjust background opacity
-	</label>
-</div>
+	$: color = bgOpacity < 0.6 ? '#000' : '#fff';
+	import WordResumeClone from '../lib/assets/resume.png';
+</script>
 
 <div
 	class="container-for-everything"

@@ -1,8 +1,8 @@
 <script>
-	import { count } from '../components/countStore.js';
+	import { opacity } from '../components/countStore.js';
 
 	function reset() {
-		count.set(16);
+		opacity.set(0.5);
 	}
 </script>
 

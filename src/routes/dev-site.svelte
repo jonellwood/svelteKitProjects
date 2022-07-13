@@ -1,25 +1,20 @@
 <script>
 	import { count } from '../../src/lib/components/countStore.js';
+	import { opacity } from '../../src/lib/components/countStore.js';
 	let countValue;
-
 	count.subscribe((value) => {
-		console.log(value);
 		countValue = value;
 	});
 
-	import chat from '../lib/assets/pokemonGame.png';
-	let bgOpacity = 0.5;
+	let bgOpacity;
+	opacity.subscribe((value) => {
+		bgOpacity = value;
+	});
+
 	$: color = bgOpacity < 0.6 ? '#000' : '#fff';
-	let fontSize = 16;
-	$: size = fontSize;
+	import chat from '../lib/assets/pokemonGame.png';
 </script>
 
-<div class="slider-holder">
-	<label>
-		<input type="range" min="0" max="1" step="0.1" bind:value={bgOpacity} />
-		Adjust background opacity
-	</label>
-</div>
 <div
 	class="container-for-everything"
 	style="color: {color}; 

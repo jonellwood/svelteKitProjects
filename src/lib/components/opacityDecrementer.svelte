@@ -1,7 +1,8 @@
 <script>
-	import { count } from '../components/countStore.js';
+	import { opacity } from '../components/countStore.js';
+
 	function decrement() {
-		count.update((n) => n - 1);
+		opacity.update((n) => n - 0.2);
 	}
 </script>
 

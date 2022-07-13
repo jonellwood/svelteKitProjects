@@ -21,6 +21,8 @@ a {
 	min-height: 650px;
 	line-height: 1.25;
 	font-size: 16px;
+	border-radius: 25px;
+	box-shadow: 0px 35px 45px 5px black;
 }
 article {
 	padding-top: 10px;
