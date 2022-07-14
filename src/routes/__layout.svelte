@@ -36,12 +36,13 @@
 		<Resetter />
 	</p>
 	<p class="vanishing-text">The font size is {countValue}px</p>
-	<p class="right-text">Adjust Opacity</p>
-	<p class="opacity-button">
+	<div class="opacity-button">
+		<p>Darker</p>
 		<OpacityIncrementer />
+		<p>Lighter</p>
 		<Opacitydecrementer />
 		<OpacityResetter />
-	</p>
+	</div>
 
 	<p class="hide-button">
 		{#if !visible}
@@ -67,6 +68,10 @@
 	h1 {
 		text-align: center;
 	}
+	div:nth-last-of-type(2) p {
+		text-align: center;
+		color: hotpink;
+	}
 
 	.control-buttons {
 		display: grid;
@@ -85,6 +90,7 @@
 	.right-text {
 		text-align: right;
 	}
+
 	@media (max-width: 900px) {
 		.font-button {
 			display: none;

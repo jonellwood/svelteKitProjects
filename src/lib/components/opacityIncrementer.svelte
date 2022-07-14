@@ -7,3 +7,10 @@
 </script>
 
 <button on:click={increment}> + </button>
+
+<style>
+	button {
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+</style>

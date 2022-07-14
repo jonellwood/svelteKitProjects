@@ -75,9 +75,11 @@
 		color: inherit;
 		cursor: pointer;
 	}
+
 	.card-holder {
 		/* display: grid; */
 		/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+
 		display: flex;
 		justify-content: center;
 	}
@@ -88,7 +90,7 @@
 		grid-template-rows: 1fr;
 		margin-left: 10px;
 		margin-right: 10px;
-		border: 3px solid black;
+		border: 3px solid #00000020;
 		text-align: center;
 		border-radius: 25px;
 		text-shadow: 5px 10px 10px #a0a0a0;
@@ -136,6 +138,7 @@
 		text-align: end;
 		margin-right: 30px;
 	}
+
 	@media (max-width: 1275px) {
 		.card-holder {
 			display: grid;
