@@ -5,6 +5,13 @@
 <footer>
 	<Hr />
 	<p class="footer">
+		<!-- <a href="https://projects.jonellwood.dev"
+			><img
+				src="https://img.shields.io/badge/Projects:-Click%20here
+			-blue"
+				alt="cool badge"
+			/>
+		</a> -->
 		<a href="https://jonellwood.dev" target="_blank">My Site</a>
 		<a href="https://github.com/jonellwood" target="_blank">Github</a>
 		<a href="https://contact.jonellwood.dev" target="_blank">Contact</a>
@@ -15,7 +22,7 @@
 
 <style>
 	.footer {
-		color: #fff;
+		color: #00000090;
 		font-weight: 500;
 		text-align: center;
 	}
